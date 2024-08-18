@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer type="module" src="js/app.js"></script>
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="container active">
+      <div class="top">
+        <i class="fas fa-bars menu-btn"></i>
+        <input
+          type="text"
+          placeholder="Search by title or artist..."
+          class="input-search hidden"
+        />
+        <i class="fas fa-search search-btn"></i>
+      </div>
+      <div class="cover-image"></div>
+      <div class="player-body"></div>
+      <div class="list-wrapper">
+        <div class="list" id="playlist"></div>
+      </div>
+      <div class="bar">
+        <div class="dot"></div>
+        <div class="time">
+          <h5 class="current-time">0:00</h5>
+          <h5 class="duration-time">0:00</h5>
+        </div>
+      </div>
+      <div class="info">
+        <h2>song title</h2>
+        <h3>artist</h3>
+      </div>
+      <div class="controls">
+        <i class="fas fa-backward btn-prev" id="prev"></i>
+        <i class="fas fa-play btn-play" id="play"></i>
+        <i class="fas fa-forward btn-next" id="next"></i>
+      </div>
+      <div class="more-controls">
+        <div>
+          <i class="fas fa-heart icon-favorite" id="current-favorite"></i>
+          <p class="text-more-controls">Like</p>
+        </div>
+        <div>
+          <i class="fas fa-random" id="shuffle"></i>
+          <p class="text-more-controls">Shuffle</p>
+        </div>
+        <div>
+          <i class="fas fa-repeat" id="repeat"></i>
+          <p class="text-more-controls">Repeat</p>
+        </div>
+      </div>
+      <div class="container-controls">
+        <div class="mini-controls">
+          <i class="fas fa-backward btn-prev"></i>
+          <i class="fas fa-play btn-play"></i>
+          <i class="fas fa-forward btn-next"></i>
+        </div>
+        <p class="current-song-title">Song title</p>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/01370d0f79.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
