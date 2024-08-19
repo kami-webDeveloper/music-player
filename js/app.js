@@ -45,7 +45,7 @@ const updatePlaylist = function (songs = state.songs) {
   const markup = songs
     .map((song, i) => {
       const { id, title, artist, imgSrc, src } = song;
-      const songForDuration = new Audio(`/data/${src}`);
+      const songForDuration = new Audio(`./data/${src}`);
       const isFavorite = state.favorites.includes(id);
 
       songForDuration.addEventListener("loadedmetadata", () => {
@@ -89,7 +89,7 @@ const loadSong = function (songId) {
   <h3>${artist}</h3>
   `;
 
-  state.audio.src = `/data/${targetSong.src}`;
+  state.audio.src = `./data/${targetSong.src}`;
 
   state.favorites.includes(songId)
     ? elements.currFavorite.classList.add("active")
